@@ -5473,9 +5473,9 @@
 							"font": "Arial;13;0",
 							"left": 1320,
 							"top": 592,
-							"width": 640,
-							"height": 104,
-							"text": "void calcularTiempoTotal() {\n  this.tiempoEstimadoTotal = (this.viajesPorSeccion.map(v -> v.calcularTiempo(v.calcularDistancia()))).sum();\n  if(this.persona.deseaFrenarEnCadaParada){\n    this.tiempoEstimadoTotal += (this.viajesPorSeccion.map(v -> v.getDetencionEnParada())).sum();\n  }\n}"
+							"width": 704,
+							"height": 130,
+							"text": "LocalTime calcularTiempoTotal() {\n  LocalTime tiempoEstimadoTotal; \n  tiempoEstimadoTotal = (this.viajesPorSeccion.map(v -> v.calcularTiempo(v.calcularDistancia()))).sum();\n  if(this.persona.deseaFrenarEnCadaParada){\n    ttiempoEstimadoTotal += (this.viajesPorSeccion.map(v -> v.getDetencionEnParada())).sum();\n  }\n  return tiempoEstimadoTotal;\n}"
 						}
 					]
 				},
